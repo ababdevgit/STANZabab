@@ -33,7 +33,7 @@ const intro = [
 
 const MobileCompanyIntro = () => {
   return (
-    <div className="px-6 py-8 block md:hidden" id="mobileCompanyIntro">
+    <div className="px-6 py-8">
       <div className="mb-10">
         <h2 className="text-lg font-bold mb-3">
           Company Intro
@@ -72,7 +72,7 @@ const MobileCompanyIntro = () => {
               className="object-contain"
             />
             <p
-              className="text-center mt-4 text-[8px] text-[#262424] text-base font-medium leading-[175%]"
+              className="text-center mt-4 text-[8px] text-[#262424] font-medium leading-[175%]"
               style={{
                 maxWidth: item.maxWidth,
               }}
