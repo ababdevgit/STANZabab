@@ -50,7 +50,7 @@ export default function MobileLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full h-full min-h-screen flex md:hidden flex-col">
+    <div className="w-full h-full min-h-screen flex md:hidden flex-col pt-[98px]">
       <Header />
       <MobileHero />
 

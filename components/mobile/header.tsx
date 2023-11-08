@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 const Header = () => {
   return (
     <>
-      <header id="header">
+      <header id="header" className="h-[98px] bg-white fixed inset-0 shadow-md">
         <nav className="h-[98px] px-6 flex items-center justify-between">
           <Logo />
           <Sheet>
@@ -46,7 +46,12 @@ const Header = () => {
                   </SheetClose>
                 </li>
                 <li>
-                  <Link to="with-indonesia" spy={true} smooth={true}>
+                  <Link
+                    to="with-indonesia"
+                    spy={true}
+                    smooth={true}
+                    offset={-98}
+                  >
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         WITH INDONESIA
@@ -55,7 +60,12 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="company-intro" spy={true} smooth={true}>
+                  <Link
+                    to="company-intro"
+                    spy={true}
+                    smooth={true}
+                    offset={-98}
+                  >
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         COMPANY INTRO
@@ -64,7 +74,12 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="business-structure" spy={true} smooth={true}>
+                  <Link
+                    to="business-structure"
+                    spy={true}
+                    smooth={true}
+                    offset={-98}
+                  >
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         BUSINESS STRUCTURE
@@ -73,7 +88,12 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="stanzabab-partner" spy={true} smooth={true}>
+                  <Link
+                    to="stanzabab-partner"
+                    spy={true}
+                    smooth={true}
+                    offset={-98}
+                  >
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         STATNZabab Partner
@@ -82,7 +102,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="debit-card" spy={true} smooth={true}>
+                  <Link to="debit-card" spy={true} smooth={true} offset={-98}>
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         Debit Card
