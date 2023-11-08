@@ -2,7 +2,7 @@ import Logo from "@/components/logo";
 
 const Header = () => {
   return (
-    <header className="max-w-[1920px] w-full">
+    <header className="w-full">
       <nav className="max-w-[1440px] w-full h-[98px] mx-auto flex items-center justify-between px-6">
         <Logo />
         <a
