@@ -1,12 +1,12 @@
 export const indicators = [
   {
     label: "Current TVL",
-    value: 5080000,
+    value: 5120300,
     unit: "USDT",
   },
   {
     label: "Pool User",
-    value: 582284,
+    value: 583,
     unit: "Users",
   },
 ];
