@@ -12,7 +12,7 @@ const Footer = () => {
       </h3>
       <div className="mb-7 flex flex-col items-center gap-4">
         <a
-          href="https://t.me/stanzabab"
+          href="https://t.me/stanzababchannel"
           rel="noopener noreferrer"
           target="_blank"
         >
