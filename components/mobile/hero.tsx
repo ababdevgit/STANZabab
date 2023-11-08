@@ -3,18 +3,7 @@
 import Image from "next/image";
 import CountUp from "react-countup";
 
-const indicators = [
-  {
-    label: "Current TVL",
-    value: 5080000,
-    unit: "USDT",
-  },
-  {
-    label: "Pool User",
-    value: 582284,
-    unit: "Users",
-  },
-];
+import { indicators } from "@/lib/data";
 
 const MobileHero = () => {
   return (
