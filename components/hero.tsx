@@ -4,6 +4,7 @@ import Image from "next/image";
 import CountUp from "react-countup";
 
 import { indicators } from "@/lib/data";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -39,20 +40,20 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center gap-8">
-            <a
-              href="#"
-              rel="noopener noreferrer"
+            <Link
+              href={`/pdfs/stanzabab-intro.pdf`}
+              target="_blank"
               className="bg-brand-primary flex items-center justify-center w-[164px] h-[47px] rounded-[20px] text-lg text-white font-medium"
             >
               Introduction
-            </a>
-            <a
-              href="#"
-              rel="noopener noreferrer"
+            </Link>
+            <Link
+              href={`/pdfs/stanzabab-reward-plan.pdf`}
+              target="_blank"
               className="bg-brand-primary flex items-center justify-center w-[164px] h-[47px] rounded-[20px] text-lg text-white font-medium"
             >
               See plan
-            </a>
+            </Link>
           </div>
         </div>
         <Image

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import CountUp from "react-countup";
 
@@ -33,22 +34,20 @@ const MobileHero = () => {
         ))}
       </div>
       <div className="flex items-center justify-between mb-10">
-        <a
-          href="#"
-          rel="noopener noreferrer"
+        <Link
+          href={`/pdfs/stanzabab-intro.pdf`}
           target="_blank"
           className="w-[90px] h-[26px] flex justify-center items-center text-xs text-white font-medium rounded-[20px] bg-brand-primary"
         >
           Introduction
-        </a>
-        <a
-          href="#"
-          rel="noopener noreferrer"
+        </Link>
+        <Link
+          href={`/pdfs/stanzabab-reward-plan.pdf`}
           target="_blank"
           className="w-[90px] h-[26px] flex justify-center items-center text-xs text-white font-medium rounded-[20px] bg-brand-primary"
         >
           Plan
-        </a>
+        </Link>
         <a
           href="https://stanzababsystem.com"
           rel="noopener noreferrer"

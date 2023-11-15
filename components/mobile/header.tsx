@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import Logo from "@/components/logo";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   return (
@@ -32,21 +33,28 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <SheetClose className="outline-none">
-                    <span className="text-xs text-white font-bold leading-normal">
-                      INTRODUCTION
-                    </span>
-                  </SheetClose>
-                </li>
-                <li>
-                  <SheetClose className="outline-none">
-                    <span className="text-xs text-white font-bold leading-normal">
-                      PLAN
-                    </span>
-                  </SheetClose>
+                  <Link href={`/pdfs/stanzabab-intro.pdf`} target="_blank">
+                    <SheetClose className="outline-none">
+                      <span className="text-xs text-white font-bold leading-normal">
+                        INTRODUCTION
+                      </span>
+                    </SheetClose>
+                  </Link>
                 </li>
                 <li>
                   <Link
+                    href={`/pdfs/stanzabab-reward-plan.pdf`}
+                    target="_blank"
+                  >
+                    <SheetClose className="outline-none">
+                      <span className="text-xs text-white font-bold leading-normal">
+                        PLAN
+                      </span>
+                    </SheetClose>
+                  </Link>
+                </li>
+                <li>
+                  <ScrollLink
                     to="with-indonesia"
                     spy={true}
                     smooth={true}
@@ -57,10 +65,10 @@ const Header = () => {
                         WITH INDONESIA
                       </span>
                     </SheetClose>
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link
+                  <ScrollLink
                     to="company-intro"
                     spy={true}
                     smooth={true}
@@ -71,10 +79,10 @@ const Header = () => {
                         COMPANY INTRO
                       </span>
                     </SheetClose>
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link
+                  <ScrollLink
                     to="business-structure"
                     spy={true}
                     smooth={true}
@@ -85,10 +93,10 @@ const Header = () => {
                         BUSINESS STRUCTURE
                       </span>
                     </SheetClose>
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link
+                  <ScrollLink
                     to="stanzabab-partner"
                     spy={true}
                     smooth={true}
@@ -99,25 +107,30 @@ const Header = () => {
                         STATNZabab Partner
                       </span>
                     </SheetClose>
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link to="debit-card" spy={true} smooth={true} offset={-98}>
+                  <ScrollLink
+                    to="debit-card"
+                    spy={true}
+                    smooth={true}
+                    offset={-98}
+                  >
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         Debit Card
                       </span>
                     </SheetClose>
-                  </Link>
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link to="footer" spy={true} smooth={true}>
+                  <ScrollLink to="footer" spy={true} smooth={true}>
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
                         STANZabab CS
                       </span>
                     </SheetClose>
-                  </Link>
+                  </ScrollLink>
                 </li>
               </ul>
             </SheetContent>
