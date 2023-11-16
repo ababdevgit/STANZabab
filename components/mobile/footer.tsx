@@ -51,7 +51,7 @@ const Footer = () => {
           Zombape wallet
         </a>
         <a
-          href="https://madeby.yuga.com/apes/product/0x4339dc32257a209c2b8657f55bc47a172321eb0f815e6b390fa4b3322c3ee86a"
+          href="https://ipfs.io/ipfs/Qmau4XoXuMYLsCscJcdZy2CmibkkcQYxJnNUsopaTYR2wc"
           rel="noopener noreferrer"
           target="_blank"
           className="text-[30px] text-white font-bold leading-[175%]"
