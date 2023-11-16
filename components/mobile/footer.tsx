@@ -10,7 +10,7 @@ const Footer = () => {
       <h3 className="text-lg text-white font-bold leading-[175%] mb-4">
         Our customer service channels
       </h3>
-      <div className="mb-7 flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4">
         <a
           href="https://t.me/stanzababchannel"
           rel="noopener noreferrer"
@@ -19,11 +19,53 @@ const Footer = () => {
           <BsTelegram color="white" className="w-6 h-6" />
         </a>
         <div className="space-y-2 text-center">
-          <p className="text-white text-xs">Telegram cs: @STANZabab_global</p>
+          <p className="text-white text-xs">Telegram cs: @STANZabab_globals</p>
           <p className="text-white text-xs">Kakao cs: stanzabab_CS</p>
           <p className="text-white text-xs">Line cs: stanzabab_global_cs</p>
         </div>
       </div>
+
+      <div className="py-10 flex flex-col items-center gap-y-4">
+        <a
+          href="https://abab.trade"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-[20px] text-white font-bold leading-[175%]"
+        >
+          abab.trade
+        </a>
+        <a
+          href="https://btchouse.io"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-[20px] text-white font-bold leading-[175%]"
+        >
+          BTChouse
+        </a>
+        <a
+          href="https://stanzababwallet.com"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-[20px] text-white font-bold leading-[175%]"
+        >
+          Zombape wallet
+        </a>
+        <a
+          href="https://madeby.yuga.com/apes/product/0x4339dc32257a209c2b8657f55bc47a172321eb0f815e6b390fa4b3322c3ee86a"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-[30px] text-white font-bold leading-[175%]"
+        >
+          <Image
+            src="/images/made-by-apes.png"
+            alt="Made by apes"
+            width={50}
+            height={50}
+            className="object-contain"
+          />
+        </a>
+      </div>
+
       <Image
         src="/images/footer-logo.png"
         alt="Logo"
