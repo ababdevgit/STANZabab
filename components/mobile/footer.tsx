@@ -25,14 +25,20 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="py-10 flex flex-col items-center gap-y-4">
+      <div className="py-10 flex flex-col items-center gap-y-10">
         <a
           href="https://abab.trade"
           rel="noopener noreferrer"
           target="_blank"
           className="text-[20px] text-white font-bold leading-[175%]"
         >
-          abab.trade
+          <Image
+            src="/images/abab.png"
+            alt="ABAB Trade"
+            width={148}
+            height={39}
+            className="object-contain"
+          />
         </a>
         <a
           href="https://btchouse.io"
@@ -40,7 +46,13 @@ const Footer = () => {
           target="_blank"
           className="text-[20px] text-white font-bold leading-[175%]"
         >
-          BTChouse
+          <Image
+            src="/images/btc-house.png"
+            alt="BTChouse"
+            width={130}
+            height={73}
+            className="object-contain"
+          />
         </a>
         <a
           href="https://stanzababwallet.com"
@@ -48,7 +60,13 @@ const Footer = () => {
           target="_blank"
           className="text-[20px] text-white font-bold leading-[175%]"
         >
-          Zombape wallet
+          <Image
+            src="/images/zombape-wallet.png"
+            alt="Zombape wallet"
+            width={159}
+            height={65}
+            className="object-contain fill-white"
+          />
         </a>
         <a
           href="https://ipfs.io/ipfs/Qmau4XoXuMYLsCscJcdZy2CmibkkcQYxJnNUsopaTYR2wc"
@@ -59,8 +77,8 @@ const Footer = () => {
           <Image
             src="/images/made-by-apes.png"
             alt="Made by apes"
-            width={50}
-            height={50}
+            width={60}
+            height={60}
             className="object-contain"
           />
         </a>
