@@ -5,6 +5,12 @@ import Image from "next/image";
 import CountUp from "react-countup";
 
 import { indicators } from "@/lib/data";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const MobileHero = () => {
   return (
@@ -34,20 +40,75 @@ const MobileHero = () => {
         ))}
       </div>
       <div className="flex items-center justify-between mb-10">
-        <Link
-          href={`/pdfs/stanzabab-intro.pdf`}
-          target="_blank"
-          className="w-[90px] h-[26px] flex justify-center items-center text-xs text-white font-medium rounded-[20px] bg-brand-primary"
-        >
-          Introduction
-        </Link>
-        <Link
-          href={`/pdfs/stanzabab-reward-plan.pdf`}
-          target="_blank"
-          className="w-[90px] h-[26px] flex justify-center items-center text-xs text-white font-medium rounded-[20px] bg-brand-primary"
-        >
-          Plan
-        </Link>
+        <DropdownMenu>
+          <DropdownMenuTrigger className="w-[90px] h-[26px] flex justify-center items-center text-xs text-white font-medium rounded-[20px] bg-brand-primary">
+            See plan
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-[90px] rounded-[20px] mt-2 p-0">
+            <DropdownMenuItem asChild>
+              <Link
+                href={`/pdfs/plan_en.pdf`}
+                target="_blank"
+                className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3 px-0"
+              >
+                EN version
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link
+                href={`/pdfs/plan_kr.pdf`}
+                target="_blank"
+                className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3 px-0"
+              >
+                KR version
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link
+                href={`/pdfs/plan_jp.pdf`}
+                target="_blank"
+                className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3 px-0"
+              >
+                JP version
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger className="w-[90px] h-[26px] flex justify-center items-center text-xs text-white font-medium rounded-[20px] bg-brand-primary">
+            Introduction
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-[90px] rounded-[20px] mt-2">
+            <DropdownMenuItem asChild>
+              <Link
+                href={`/pdfs/intro_en.pdf`}
+                target="_blank"
+                className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3 px-0"
+              >
+                EN version
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link
+                href={`/pdfs/intro_kr.pdf`}
+                target="_blank"
+                className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3 px-0"
+              >
+                KR version
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link
+                href={`/pdfs/intro_jp.pdf`}
+                target="_blank"
+                className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3 px-0"
+              >
+                JP version
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
         <a
           href="https://stanzababsystem.com"
           rel="noopener noreferrer"

@@ -1,10 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import CountUp from "react-countup";
 
 import { indicators } from "@/lib/data";
-import Link from "next/link";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Hero = () => {
   return (
@@ -40,20 +46,75 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center gap-8">
-            <Link
-              href={`/pdfs/stanzabab-intro.pdf`}
-              target="_blank"
-              className="bg-brand-primary flex items-center justify-center w-[164px] h-[47px] rounded-[20px] text-lg text-white font-medium"
-            >
-              Introduction
-            </Link>
-            <Link
-              href={`/pdfs/stanzabab-reward-plan.pdf`}
-              target="_blank"
-              className="bg-brand-primary flex items-center justify-center w-[164px] h-[47px] rounded-[20px] text-lg text-white font-medium"
-            >
-              See plan
-            </Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="bg-brand-primary flex items-center justify-center w-[164px] h-[47px] rounded-[20px] text-lg text-white font-medium">
+                See plan
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-[164px] rounded-[20px] mt-2">
+                <DropdownMenuItem asChild>
+                  <Link
+                    href={`/pdfs/plan_en.pdf`}
+                    target="_blank"
+                    className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3"
+                  >
+                    English version
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href={`/pdfs/plan_kr.pdf`}
+                    target="_blank"
+                    className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3"
+                  >
+                    Korean version
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href={`/pdfs/plan_jp.pdf`}
+                    target="_blank"
+                    className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3"
+                  >
+                    Japanese version
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger className="bg-brand-primary flex items-center justify-center w-[164px] h-[47px] rounded-[20px] text-lg text-white font-medium">
+                Introduction
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-[164px] rounded-[20px] mt-2">
+                <DropdownMenuItem asChild>
+                  <Link
+                    href={`/pdfs/intro_en.pdf`}
+                    target="_blank"
+                    className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3"
+                  >
+                    English version
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href={`/pdfs/intro_kr.pdf`}
+                    target="_blank"
+                    className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3"
+                  >
+                    Korean version
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link
+                    href={`/pdfs/intro_jp.pdf`}
+                    target="_blank"
+                    className="text-base text-brand-primary font-medium leading-[18.75px] flex items-center justify-center py-3"
+                  >
+                    Japanese version
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
         <Image
