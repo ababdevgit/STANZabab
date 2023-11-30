@@ -32,7 +32,7 @@ const Header = () => {
                     Register
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <Link href={`/pdfs/stanzabab-intro.pdf`} target="_blank">
                     <SheetClose className="outline-none">
                       <span className="text-xs text-white font-bold leading-normal">
@@ -52,7 +52,7 @@ const Header = () => {
                       </span>
                     </SheetClose>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <ScrollLink
                     to="with-indonesia"
