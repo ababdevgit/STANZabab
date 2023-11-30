@@ -16,7 +16,7 @@ const Footer = () => {
           <BsTelegram color="white" className="w-11 h-11" />
         </a>
         <div className="space-y-3 text-center">
-          <p className="text-white text-lg">Telegram cs: @STANZabab_globals</p>
+          <p className="text-white text-lg">Telegram cs: @STANZabab_globals1</p>
           <p className="text-white text-lg">Kakao cs: stanzabab_CS</p>
           <p className="text-white text-lg">Line cs: stanzabab_global_cs</p>
         </div>
