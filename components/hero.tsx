@@ -39,7 +39,7 @@ const Hero = () => {
                   duration={2}
                   separator=","
                   suffix={` ${indicator.unit}`}
-                  className="text-3xl font-bold"
+                  className="text-[28px] font-bold"
                 />
               </div>
             ))}
